@@ -1,0 +1,32 @@
+{
+  "id": "a9ead79c-ba42-46c5-958e-82f02164212f",
+  "uid": "quo-earum-qui",
+  "type": "aboutUs",
+  "data": {
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Aute aliqua eu velit aliqua.",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Mollit nulla nulla commodo adipisicing cillum cillum qui. Aute tempor consectetur culpa duis adipisicing consectetur dolore sint irure eiusmod occaecat nostrud voluptate.",
+        "spans": []
+      }
+    ],
+    "metaTitle": "reinvent user-centric mindshare",
+    "metaDescription": "maximize holistic e-tailers",
+    "ogTitle": "facilitate seamless web-readiness",
+    "ogDescription": "revolutionize bleeding-edge infrastructures",
+    "ogImage": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "ogImageWidth": "embrace bleeding-edge content",
+    "ogImageHeight": "streamline dot-com applications",
+    "ogImageAlt": "cultivate strategic users"
+  }
+}

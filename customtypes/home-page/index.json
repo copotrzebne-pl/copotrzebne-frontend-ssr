@@ -1,0 +1,104 @@
+{
+  "id": "home-page",
+  "label": "Home Page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "mainBanner": {
+        "type": "Image",
+        "config": {
+          "label": "Main Banner",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "mainTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Main Title",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "cta_section": {
+              "type": "SharedSlice"
+            },
+            "short_story": {
+              "type": "SharedSlice"
+            },
+            "partners": {
+              "type": "SharedSlice"
+            },
+            "faqs": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO": {
+      "metaTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": ""
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      },
+      "ogTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Og Title",
+          "placeholder": ""
+        }
+      },
+      "ogDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Og Description",
+          "placeholder": ""
+        }
+      },
+      "ogImage": {
+        "type": "Link",
+        "config": {
+          "label": "Og Image",
+          "placeholder": "",
+          "select": "media"
+        }
+      },
+      "ogImageWidth": {
+        "type": "Text",
+        "config": {
+          "label": "Og Image Width",
+          "placeholder": ""
+        }
+      },
+      "ogImageHeight": {
+        "type": "Text",
+        "config": {
+          "label": "Og Image Height",
+          "placeholder": ""
+        }
+      },
+      "ogImageAlt": {
+        "type": "Text",
+        "config": {
+          "label": "Og Image Alt",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "slices": {
+    "components": {
+      "cta_section": {
+        "library": "slices",
+        "id": "cta_section",
+        "name": "CtaSection",
+        "description": "CtaSection",
+        "model": {
+          "id": "cta_section",
+          "type": "SharedSlice",
+          "name": "CtaSection",
+          "description": "CtaSection",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "CtaSection",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "buttonTitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Button Title",
+                    "placeholder": ""
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "cta_section",
+            "items": [],
+            "primary": {
+              "title": "drive B2B interfaces",
+              "buttonTitle": "exploit visionary infrastructures",
+              "link": {
+                "link_type": "Web",
+                "url": "http://twitter.com"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "faqs": {
+        "library": "slices",
+        "id": "faqs",
+        "name": "Faqs",
+        "description": "Faqs",
+        "model": {
+          "id": "faqs",
+          "type": "SharedSlice",
+          "name": "Faqs",
+          "description": "Faqs",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Faqs",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                }
+              },
+              "items": {
+                "faq": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Faq",
+                    "select": "document",
+                    "customtypes": [
+                      "faq"
+                    ]
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "faqs",
+            "items": [
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                }
+              },
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              },
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                }
+              },
+              {
+                "faq": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Recontextualize 24/365 content",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "partners": {
+        "library": "slices",
+        "id": "partners",
+        "name": "Partners",
+        "description": "Partners",
+        "model": {
+          "id": "partners",
+          "type": "SharedSlice",
+          "name": "Partners",
+          "description": "Partners",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Partners",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {
+                "partnerLogo": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Partner Logo",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "partnerLogoAlt": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Partner Logo Alt",
+                    "placeholder": ""
+                  }
+                },
+                "partnerLogoTitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Partner Logo Title",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "partners",
+            "items": [
+              {
+                "partnerLogo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+                },
+                "partnerLogoAlt": "innovate integrated networks",
+                "partnerLogoTitle": "morph interactive e-markets"
+              },
+              {
+                "partnerLogo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+                },
+                "partnerLogoAlt": "redefine granular infomediaries",
+                "partnerLogoTitle": "embrace 24/365 e-tailers"
+              },
+              {
+                "partnerLogo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+                },
+                "partnerLogoAlt": "syndicate holistic methodologies",
+                "partnerLogoTitle": "brand turn-key e-tailers"
+              },
+              {
+                "partnerLogo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+                },
+                "partnerLogoAlt": "mesh proactive paradigms",
+                "partnerLogoTitle": "evolve interactive e-commerce"
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Harness value-added eyeballs",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Culpa nisi Lorem laborum culpa irure velit aute. Quis exercitation adipisicing eu est aute quis dolor. Eu duis tempor est reprehenderit dolor reprehenderit minim incididunt.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "short_story": {
+        "library": "slices",
+        "id": "short_story",
+        "name": "ShortStory",
+        "description": "ShortStory",
+        "model": {
+          "id": "short_story",
+          "type": "SharedSlice",
+          "name": "ShortStory",
+          "description": "ShortStory",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ShortStory",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "short_story",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Evolve ubiquitous e-business",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Fugiat cillum exercitation incididunt commodo mollit aute voluptate. Irure commodo nisi fugiat. Cillum id cupidatat Lorem pariatur cupidatat.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "slices": {
+    "Faq": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CtaSection": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "ShortStory": {},
+    "Partners": {},
+    "Faqs": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    }
+  },
+  "_cts": {
+    "home-page": {},
+    "faq": {},
+    "aboutUs": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "login": {},
+    "search": {}
+  }
+}

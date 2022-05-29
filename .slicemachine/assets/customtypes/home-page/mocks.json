@@ -1,0 +1,28 @@
+{
+  "id": "0b25dbab-6148-40bd-af40-98552bc0bb39",
+  "uid": "est-sed-est",
+  "type": "home-page",
+  "data": {
+    "mainBanner": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+    },
+    "mainTitle": "optimize front-end communities",
+    "metaTitle": "redefine frictionless metrics",
+    "metaDescription": "synergize frictionless vortals",
+    "ogTitle": "incentivize vertical platforms",
+    "ogDescription": "innovate plug-and-play relationships",
+    "ogImage": {
+      "link_type": "media",
+      "url": "https://source.unsplash.com/daily"
+    },
+    "ogImageWidth": "embrace cross-media paradigms",
+    "ogImageHeight": "transform efficient content",
+    "ogImageAlt": "enhance rich platforms"
+  }
+}
