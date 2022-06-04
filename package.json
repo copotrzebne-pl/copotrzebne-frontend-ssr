@@ -22,6 +22,7 @@
     "next": "12.1.4",
     "p-memoize": "^6.0.1",
     "pigeon-maps": "^0.21.0",
+    "rc-collapse": "^3.3.0",
     "react": "18.0.0",
     "react-calendar": "^3.7.0",
     "react-dom": "18.0.0",

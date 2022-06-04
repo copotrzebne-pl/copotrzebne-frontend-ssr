@@ -12,11 +12,10 @@
       "description": "Faqs",
       "primary": {
         "title": {
-          "type": "StructuredText",
+          "type": "Text",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "placeholder": ""
           }
         }
       },

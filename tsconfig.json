@@ -41,6 +41,9 @@
       "views/*": [
         "views/*"
       ],
+      "slices/*": [
+        "slices/*"
+      ],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

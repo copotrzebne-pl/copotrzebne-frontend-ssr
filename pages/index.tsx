@@ -1,9 +1,10 @@
 import { createClient } from '../prismicio'
 import { MetaData, pickCmsSeoData } from 'components/MetaData'
+import LandingView from 'views/Landing'
 
 export const getStaticProps = async ({ previewData }) => {
   const client = createClient({ previewData })
-  const page = await client.getSingle('home-page')
+  const page = await client.getSingle('home-page', { fetchLinks : 'faq.title, faq.description' })
 
   return {
     props: {
@@ -16,8 +17,7 @@ const Home = ({ page: { data } }) => {
   return (
     <div>
       <MetaData {...pickCmsSeoData(data)} />
-      <h1>{data.mainTitle}</h1>
-      <img src={data.mainBanner.url} alt={data.mainBanner.alt} />
+      <LandingView page={data} />
     </div>
   )
 }

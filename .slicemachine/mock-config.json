@@ -10,7 +10,18 @@
         "primary": {}
       }
     },
-    "ShortStory": {},
+    "ShortStory": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
     "Partners": {},
     "Faqs": {
       "default": {

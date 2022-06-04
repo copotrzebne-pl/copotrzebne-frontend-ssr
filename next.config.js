@@ -13,6 +13,9 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    domains: ['images.prismic.io'],
+  },
 }
 
 module.exports = nextConfig

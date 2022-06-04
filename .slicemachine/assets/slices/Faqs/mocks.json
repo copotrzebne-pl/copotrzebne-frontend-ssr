@@ -7,7 +7,7 @@
       {
         "faq": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "https://slicemachine.dev"
         }
       },
       {
@@ -19,24 +19,12 @@
       {
         "faq": {
           "link_type": "Web",
-          "url": "http://twitter.com"
-        }
-      },
-      {
-        "faq": {
-          "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://prismic.io"
         }
       }
     ],
     "primary": {
-      "title": [
-        {
-          "type": "heading1",
-          "text": "Recontextualize 24/365 content",
-          "spans": []
-        }
-      ]
+      "title": "envisioneer web-enabled functionalities"
     }
   }
 ]

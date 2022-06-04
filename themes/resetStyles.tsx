@@ -32,7 +32,7 @@ export default createGlobalStyle`
     position: relative; /* needed for footer positioning*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: auto !important; /* real browsers */
     height: 100%; /* IE6: treaded as min-height*/
 
