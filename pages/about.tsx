@@ -2,9 +2,9 @@ import { MetaData, pickCmsSeoData } from 'components/MetaData';
 import { createClient } from '../prismicio'
 import AboutUsView from 'views/About'
 
-export const getStaticProps = async ({ previewData }) => {
-  const client = createClient({ previewData })
-  const page = await client.getSingle('aboutUs')
+export const getStaticProps = async (context) => {
+  const client = createClient({ previewData: context.previewData })
+  const page = await client.getSingle('aboutUs', { lang: context.locale })
   return {
     props: {
       page

@@ -19,8 +19,8 @@ export const getServerSideProps: GetServerSideProps<SearchPagePropsType> = async
   const slug = params?.slug?.[0] || ""
   try {
     /* TODO: fetch data for place page from prismic */
-    const prismicClient = createClient({ previewData })
-    const pageData = await prismicClient.getSingle('home-page')
+    //const prismicClient = createClient({ previewData })
+    //const pageData = await prismicClient.getSingle('place')
   
     const client = await getRestClient(process.env.NEXT_PUBLIC_API_URL)
     const fetchedPlace = await client.get<null, Place>(
@@ -30,9 +30,7 @@ export const getServerSideProps: GetServerSideProps<SearchPagePropsType> = async
     return {
       props: {
           page: {
-            ...pageData,
             data: {
-              ...pageData.data, 
               metaTitle: getTranslation('pl', fetchedPlace.name),
               ogTitle: getTranslation('pl', fetchedPlace.name),
               /* TODO: replace ogDescription with place data */

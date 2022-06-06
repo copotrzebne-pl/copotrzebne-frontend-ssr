@@ -1,10 +1,11 @@
 import { createClient } from '../prismicio'
 import { MetaData, pickCmsSeoData } from 'components/MetaData'
 import LandingView from 'views/Landing'
+import { mapLangToPrismic } from 'utils/translation';
 
-export const getStaticProps = async ({ previewData }) => {
-  const client = createClient({ previewData })
-  const page = await client.getSingle('home-page', { fetchLinks : 'faq.title, faq.description' })
+export const getStaticProps = async (context) => {
+  const client = createClient({ previewData: context.previewData })
+  const page = await client.getSingle('home-page', { lang: mapLangToPrismic(context.locale), fetchLinks : 'faq.title, faq.description' })
 
   return {
     props: {

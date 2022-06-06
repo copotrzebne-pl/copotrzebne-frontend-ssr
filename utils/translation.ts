@@ -27,3 +27,14 @@ export const mapTranslationKeys = (translations: any): Translations => ({
   en: translations["nameEn"],
   ua: translations['nameUa']
 });
+
+export const mapLangToPrismic = (lang: string) => {
+  switch(true) {
+    case lang.includes('en'):
+      return 'en-gb'
+    case lang.includes('ua'):
+      return 'uk-ua'
+    default:
+      return 'pl'
+  }
+}

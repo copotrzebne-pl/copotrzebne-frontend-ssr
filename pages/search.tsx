@@ -1,10 +1,11 @@
 import { MetaData, pickCmsSeoData } from 'components/MetaData';
 import { createClient } from '../prismicio'
 import SearchView from 'views/Search'
+import { mapLangToPrismic } from 'utils/translation';
 
-export const getStaticProps = async ({ previewData }) => {
-  const client = createClient({ previewData })
-  const page = await client.getSingle('search')
+export const getStaticProps = async (context) => {
+  const client = createClient({ previewData: context.previewData })
+  const page = await client.getSingle('search', { lang: mapLangToPrismic(context.locale) })
   return {
     props: {
       page
