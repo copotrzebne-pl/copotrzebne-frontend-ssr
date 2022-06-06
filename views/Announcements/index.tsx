@@ -10,8 +10,10 @@ import Announcement from './Announcement'
 import { usePanelContext } from '../../contexts/panelContext'
 import { Place } from '../../contexts/types'
 import { useAnnouncementsContext } from '../../contexts/announcementsContext'
+import { useCheckIfAuthorized } from 'hooks/useCheckIfAuthorized'
 
 export default () => {
+  useCheckIfAuthorized()
   const [placesIdsMap, setPlacesIdsMap] = useState<Record<string, Place>>({})
   const {
     internalAnnouncements,

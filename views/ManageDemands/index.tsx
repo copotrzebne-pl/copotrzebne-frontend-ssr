@@ -14,6 +14,7 @@ import Dialog from 'components/Dialog'
 import DemandComponent, { AddIcon } from 'views/Demands/components/Demand'
 import { Language } from 'contexts/types'
 import { useUserContext } from 'contexts/userContext'
+import { useCheckIfAuthorized } from 'hooks/useCheckIfAuthorized'
 
 export default () => {
   const router = useRouter()
@@ -35,6 +36,7 @@ export default () => {
   } = usePanelContext()
 
   useEffect(() => {
+    useCheckIfAuthorized()
     const placeId = Array.isArray(id) ? id[0] : id 
     if (placeId && placeId !== 'new') {
       fetchPlace(placeId)

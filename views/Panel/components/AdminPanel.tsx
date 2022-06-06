@@ -10,8 +10,10 @@ import { Link } from 'react-router-dom'
 import { useRouter } from 'next/router'
 import Button from 'components/Button'
 import TranslatedText from 'components/TranslatedText'
+import { useCheckIfAuthorized } from 'hooks/useCheckIfAuthorized'
 
 const AdminPanel = ({ className }: { className?: string }) => {
+  useCheckIfAuthorized()
   const { ownedPlaces, fetchOwnedPlaces } = useUserContext()
   const router = useRouter()
   const [groupedPlaces, setGroupedPlaces] = useState<

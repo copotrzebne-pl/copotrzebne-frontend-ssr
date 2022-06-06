@@ -19,8 +19,10 @@ import TranslatedText from 'components/TranslatedText'
 import { usePanelContext } from 'contexts/panelContext'
 import { Page, routes } from 'utils/routes'
 import { Language } from 'contexts/types'
+import { useCheckIfAuthorized } from 'hooks/useCheckIfAuthorized'
 
 export default () => {
+  useCheckIfAuthorized()
   const router = useRouter()
   const { id } = router.query
 

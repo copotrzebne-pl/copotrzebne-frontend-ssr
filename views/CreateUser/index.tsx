@@ -13,8 +13,10 @@ import { breakpoint } from 'themes/breakpoints'
 import TranslatedText from 'components/TranslatedText'
 import { getRestClient } from 'utils/restClient'
 import { API } from 'utils/endpoints'
+import { useCheckIfAuthorized } from 'hooks/useCheckIfAuthorized'
 
 export default () => {
+  useCheckIfAuthorized()
   const [user, setUser] = useState<{
     login: string
     password: string

@@ -13,6 +13,7 @@ import { getTranslation } from 'utils/translation'
 import { translations } from 'utils/translations'
 import { useUserContext } from 'contexts/userContext'
 import { useRouter } from 'next/router'
+import { useCheckIfAuthorized } from 'hooks/useCheckIfAuthorized'
 
 export default () => {
   const {
@@ -28,6 +29,7 @@ export default () => {
     clearDemands,
     clearSelectedPlace
   } = usePanelContext()
+  useCheckIfAuthorized()
   const { language } = useUserContext()
 
   const router = useRouter()

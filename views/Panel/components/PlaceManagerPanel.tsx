@@ -18,8 +18,10 @@ import UpdateDateButton from 'components/UpdateDateButton'
 import LastUpdateDate from 'components/LastUpdateDate'
 import PanelButton from 'components/PanelButton'
 import { Language } from 'contexts/types'
+import { useCheckIfAuthorized } from 'hooks/useCheckIfAuthorized'
 
 const PlaceManagerPanel = ({ className }: { className?: string }) => {
+  useCheckIfAuthorized()
   const { language, ownedPlaces, fetchOwnedPlaces } = useUserContext()
   const {
     demands,

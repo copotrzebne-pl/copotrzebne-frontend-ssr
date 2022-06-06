@@ -7,7 +7,7 @@ import { breakpoint } from 'themes/breakpoints'
 import { ItemMenu } from 'types/types'
 import Link from 'next/link'
 import { useClickOutside } from 'hooks/useClickOutside'
-import { getPanelMenuItems } from 'utils/menus'
+import { getPanelMenuItems, getDefaultMenuItems } from 'utils/menus'
 import MainLogo from './MainLogo'
 import TranslatedText from './TranslatedText'
 import LanguagePicker from './LanguagePicker'
@@ -41,8 +41,8 @@ const PageHeader = ({
   }, [])
 
   useEffect(() => {
-    setHeaderMenuItems(getPanelMenuItems({ authorized, handleLogout }) as ItemMenu[])
-  }, [])
+    setHeaderMenuItems(authorized ? getPanelMenuItems({ authorized, handleLogout }) as ItemMenu[] : getDefaultMenuItems({ authorized, handleLogout }) as ItemMenu[])
+  }, [authorized])
 
   const items = headerMenuItems.map(
     ({ route, translationKey, hidden, action, highlighted }, index) => {

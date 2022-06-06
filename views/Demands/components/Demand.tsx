@@ -85,7 +85,7 @@ const DemandComponent = ({
             />
           )}{' '}
           <span>
-            <TranslatedEntry entry={supply} />
+            <TranslatedEntry entry={supply.name} />
           </span>
         </Title>
         <AddIcon>
@@ -112,7 +112,7 @@ const DemandComponent = ({
                   readOnly
                 />
                 <PriorityInputLabel htmlFor={priority.id}>
-                  <TranslatedEntry entry={priority} />
+                  <TranslatedEntry entry={priority.name} />
                 </PriorityInputLabel>
               </PriorityWrapper>
             ))}

@@ -11,8 +11,10 @@ import LastUpdateDate from 'components/LastUpdateDate'
 import UpdateDateButton from 'components/UpdateDateButton'
 import { useUserContext } from 'contexts/userContext'
 import { Language } from 'contexts/types'
+import { useCheckIfAuthorized } from 'hooks/useCheckIfAuthorized'
 
 export default () => {
+  useCheckIfAuthorized()
   const router = useRouter()
   const { id } = router.query
   const placeId = Array.isArray(id) ? id[0] : id 

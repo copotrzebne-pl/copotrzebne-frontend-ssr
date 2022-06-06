@@ -4,8 +4,10 @@ import { useUserContext } from 'contexts/userContext'
 import AdminPanel from './components/AdminPanel'
 import PlaceManagerPanel from './components/PlaceManagerPanel'
 import { breakpoint } from 'themes/breakpoints'
+import { useCheckIfAuthorized } from 'hooks/useCheckIfAuthorized'
 
 export default () => {
+  useCheckIfAuthorized()
   const { user, fetchUser } = useUserContext()
   useEffect(() => {
     // whoimi - get logged in user data

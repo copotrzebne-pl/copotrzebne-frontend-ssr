@@ -2,36 +2,41 @@ import { Page, routes } from 'utils/routes'
 
 export const getDefaultMenuItems = ({
   authorized,
-  handleLogout
+  handleLogout,
 }: {
-  authorized: boolean
-  handleLogout: () => void
+  authorized: boolean;
+  handleLogout: () => void;
 }) => [
   {
     route: routes[Page.SEARCH],
-    translationKey: 'search'
+    translationKey: "search",
+  },
+  {
+    route: routes[Page.REQUEST_NEW_PLACE],
+    translationKey: "addNewPlace",
+    hidden: authorized,
   },
   {
     route: routes[Page.PANEL],
-    translationKey: 'menuPanel',
-    hidden: !authorized
+    translationKey: "menuPanel",
+    hidden: !authorized,
   },
   {
     route: routes[Page.ABOUT],
-    translationKey: 'menuAboutUs'
+    translationKey: "menuAboutUs",
   },
   {
     route: routes[Page.LOGIN],
-    translationKey: 'menuLogIn',
-    hidden: authorized
+    translationKey: "menuLogIn",
+    hidden: authorized,
   },
   {
     route: routes[Page.LOGIN],
-    translationKey: 'menuLogout',
+    translationKey: "menuLogout",
     hidden: !authorized,
-    action: handleLogout
-  }
-]
+    action: handleLogout,
+  },
+];
 
 export const getPanelMenuItems = ({
   authorized,
@@ -43,7 +48,7 @@ export const getPanelMenuItems = ({
   {
     route: routes[Page.SEARCH],
     translationKey: "search",
-  },,
+  },
   {
     route: routes[Page.BROWSE_ANNOUNCEMENTS],
     translationKey: "menuInternalAnnouncements",

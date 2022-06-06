@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback } from 'react'
+import { createContext, useEffect, useContext, useState, useCallback } from 'react'
 import {
   User,
   UserContextValue,
@@ -19,9 +19,12 @@ const DEFAULT_LANGUAGE = 'pl'
 export const UserContext = createContext<UserContextValue | null>(null)
 
 export const UserContextProvider = ({ children }: UserContextProviderProps) => {
-  const [authorized, setAuthorized] = useState<boolean>(() =>
-    checkIfAuthorized()
-  )
+  const [authorized, setAuthorized] = useState<boolean>(false)
+
+  useEffect(() => {
+    setAuthorized(checkIfAuthorized())
+  }, [])
+
   const [language, setLanguage] = useState<Language>(
     () =>
       (typeof window !== 'undefined' && window.localStorage.getItem('lang') ||
