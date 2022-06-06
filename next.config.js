@@ -16,6 +16,25 @@ const nextConfig = {
   images: {
     domains: ['images.prismic.io'],
   },
+  i18n: {
+    locales: ['en', 'pl', 'ua'],
+    defaultLocale: 'pl',
+
+    domains: [
+      {
+        domain: 'copotrzebne.pl',
+        defaultLocale: 'pl',
+      },
+      {
+        domain: 'whatisneeded.pl',
+        defaultLocale: 'en',
+      },
+      {
+        domain: 'shchopotribno.pl',
+        defaultLocale: 'ua',
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig
