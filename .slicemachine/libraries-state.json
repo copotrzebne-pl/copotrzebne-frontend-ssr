@@ -67,7 +67,13 @@
           "fileName": "index",
           "extension": "tsx"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/wojciech.baklazec/Projects/copotrzebne-next/slices/CtaSection/default/preview.png",
+            "width": 2006,
+            "height": 560
+          }
+        }
       },
       "faqs": {
         "library": "slices",
@@ -145,7 +151,13 @@
           "fileName": "index",
           "extension": "tsx"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/wojciech.baklazec/Projects/copotrzebne-next/slices/Faqs/default/preview.png",
+            "width": 1540,
+            "height": 802
+          }
+        }
       },
       "partners": {
         "library": "slices",
@@ -197,13 +209,6 @@
                     "label": "Partner Logo Alt",
                     "placeholder": ""
                   }
-                },
-                "partnerLogoTitle": {
-                  "type": "Text",
-                  "config": {
-                    "label": "Partner Logo Title",
-                    "placeholder": ""
-                  }
                 }
               },
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
@@ -224,10 +229,9 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
                 },
-                "partnerLogoAlt": "innovate integrated networks",
-                "partnerLogoTitle": "morph interactive e-markets"
+                "partnerLogoAlt": "unleash cross-media action-items"
               },
               {
                 "partnerLogo": {
@@ -237,10 +241,9 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
                 },
-                "partnerLogoAlt": "redefine granular infomediaries",
-                "partnerLogoTitle": "embrace 24/365 e-tailers"
+                "partnerLogoAlt": "harness turn-key channels"
               },
               {
                 "partnerLogo": {
@@ -250,10 +253,9 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
                 },
-                "partnerLogoAlt": "syndicate holistic methodologies",
-                "partnerLogoTitle": "brand turn-key e-tailers"
+                "partnerLogoAlt": "exploit web-enabled relationships"
               },
               {
                 "partnerLogo": {
@@ -263,24 +265,23 @@
                   },
                   "alt": "Placeholder image",
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
                 },
-                "partnerLogoAlt": "mesh proactive paradigms",
-                "partnerLogoTitle": "evolve interactive e-commerce"
+                "partnerLogoAlt": "facilitate integrated web-readiness"
               }
             ],
             "primary": {
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Harness value-added eyeballs",
+                  "text": "Transition holistic metrics",
                   "spans": []
                 }
               ],
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Culpa nisi Lorem laborum culpa irure velit aute. Quis exercitation adipisicing eu est aute quis dolor. Eu duis tempor est reprehenderit dolor reprehenderit minim incididunt.",
+                  "text": "Officia ipsum cillum elit sit minim reprehenderit sit irure eiusmod cillum sint quis. Esse exercitation pariatur officia pariatur elit pariatur culpa qui proident ea occaecat elit laborum veniam.",
                   "spans": []
                 }
               ]
@@ -291,7 +292,13 @@
           "fileName": "index",
           "extension": "tsx"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/wojciech.baklazec/Projects/copotrzebne-next/slices/Partners/default/preview.png",
+            "width": 2722,
+            "height": 1280
+          }
+        }
       },
       "short_story": {
         "library": "slices",
@@ -379,7 +386,91 @@
           "fileName": "index",
           "extension": "tsx"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/wojciech.baklazec/Projects/copotrzebne-next/slices/ShortStory/default/preview.png",
+            "width": 2960,
+            "height": 1494
+          }
+        }
+      },
+      "story": {
+        "library": "slices",
+        "id": "story",
+        "name": "Story",
+        "description": "Story",
+        "model": {
+          "id": "story",
+          "type": "SharedSlice",
+          "name": "Story",
+          "description": "Story",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Story",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "story",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Excepteur adipisicing duis consequat eu duis do in et non ipsum. Proident ipsum elit aliqua sint incididunt fugiat ut laborum nostrud minim dolore velit excepteur ad est. Aliqua exercitation irure fugiat eiusmod eiusmod nisi do veniam ipsum veniam.",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Irure excepteur qui proident eiusmod sunt eu eu enim.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "tsx"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/wojciech.baklazec/Projects/copotrzebne-next/slices/Story/default/preview.png",
+            "width": 2076,
+            "height": 1468
+          }
+        }
       }
     }
   }

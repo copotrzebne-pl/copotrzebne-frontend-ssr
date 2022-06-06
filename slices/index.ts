@@ -4,12 +4,14 @@ import CtaSection from './CtaSection';
 import Faqs from './Faqs';
 import Partners from './Partners';
 import ShortStory from './ShortStory';
+import Story from './Story';
 
 export {
 	CtaSection,
 	Faqs,
 	Partners,
 	ShortStory,
+	Story,
 };
 
 export const components = {
@@ -17,4 +19,5 @@ export const components = {
 	faqs: Faqs,
 	partners: Partners,
 	short_story: ShortStory,
+	story: Story,
 };

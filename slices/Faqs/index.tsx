@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import { Collapse } from 'components/collapse';
-import { PrismicRichText } from '@prismicio/react';
+import { PrismicRichText } from '@prismicio/react'
+import { breakpoint } from 'themes/breakpoints'
+import { Collapse } from 'components/collapse'
 
 const Faqs = ({ slice }) => (
   <FaqWrapper>
@@ -23,11 +24,13 @@ export default Faqs
 const FaqWrapper = styled.div`
   width: 100%;
   background-color: white;
-  padding-top: 2.8rem;
-  padding-bottom: 2.8rem;
+  padding: 2.8rem 2rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 3.2rem;
+  ${breakpoint.sm`
+    padding: 2.8rem 0;
+  `}
   & > * {
     max-width: 560px;
     width: 100%;
@@ -38,10 +41,13 @@ const FaqWrapper = styled.div`
 const FaqHeader = styled.div`
   display: inline-block;
   line-height: 1.2;
-  font-size: 1.37rem;
+  font-size: 1.1rem;
   text-align: center;
   padding: 1rem 0;
   font-weight: 600;
+  ${breakpoint.sm`
+    font-size: 1.37rem;
+  `}
 `;
 
 export const SectionTitle = styled.span`
